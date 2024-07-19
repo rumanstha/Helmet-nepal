@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!--brand logo(favicon) with your tittle-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- import from bootstrap to make our css work in our web page -->
+    <link rel="stylesheet" href="ruman.css" />
+    <!--to link css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- yo chai arko web site bata pre define css use garana ko lagi import
+    gareko link like bootstrap -->
+
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        padding: 30px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-style: italic;
+
+        background-image: url(images/helmet.jpg);
+        <!-- this for background image for particular div-->
+
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        justify-content: center;
+      }
+      .blur-background {
+        background: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Semi-transparent background color */
+        backdrop-filter: blur(10px); /* Blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+        padding: 20px;
+        margin: 20px;
+        border-radius: 40px;
+      }
+      .left {
+        display: flex;
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+
+        background-image: url(images/Motorbiking-1024x576.jpg);
+      }
+    </style>
+
+    <title>Helmets Nepal</title>
+  </head>
+
+  <body>
+    <div>
+      <nav class="navbar" style="background-color: #06151f">
+        <!-- Navbar content -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Helmets Nepal</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Avilable helmet
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </div>
+    <!--import from bootstrap navbar and add css-->
+    <div class="blur-background">
+      <div class="container" style="color: white">
+        <h1 style="color: #06151f">About</h1>
+      </div>
+      <div class="para">
+        <p class="container">
+          Helmets Nepal is the result of a technological revolution and growing
+          e-commerce industry, that encouraged us to create “a one-stop digital
+          platform”, for bike lovers. We sell fashion with protection ensuring
+          quality and with the promise of reliability. But above all, one thing
+          we prioritize in selling is “Road Safety”. Our Story A story of many
+          firsts and every one of them was a blessing. Helmets Nepal began
+          operation in Kathmandu in 2016 as the first complete online one-click
+          online platform in Nepal with a store in Anamnagar. The same year, we
+          became the first motorcycle safety gear and accessories retail store
+          in the industry to introduce the concept of showrooms in Nepal by
+          opening our first one in Maitighar. Another showroom followed in Teku,
+          next to our corporate office in 2019. In early 2021, we opened our
+          third showroom in Nagpokhari. Now Helmets Nepal is the go-to platform
+          and place for safety gears ranging from varieties of helmets, safety
+          apparel lubricants and, riding techs.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col" style="font-weight: lighter">
+          <h1 class="contain">FIRST ECOMMERCE PLATFORM</h1>
+          <div>
+            <p class="platform">
+              <b>One Stop Digital Platform for Motorcycle Enthusiasts </b>
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <h1 class="hero">FASHION WITH SAFETY</h1>
+          <p>
+            We sell fashion with protection ensuring quality and with the
+            promise of reliability. But above all, one thing we prioritize in
+            selling is “Road Safety”.
+          </p>
+        </div>
+        <div class="col">
+          <h1>FIRST MOVER IN THE MARKET</h1>
+          <p>
+            Helmets Nepal has been capable to keep its name in this automotive
+            industry as the first one to introduce a showroom concept in Nepal.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--bootstrap colunm-->
+    <div class="avilable-helmet">
+      <div class="container">
+        <h1 class="mid"><button class="but">Avilable Helmets</button></h1>
+      </div>
+
+      <div class="helmet1">
+        <div class="card" style="width: 18rem">
+          <img src="images/her.png" class="card-img-top" alt="image" />
+          <div class="card-body">
+            <h5 class="card-title">SOMAN</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="images/helmet2.png" class="card-img-top" alt="image" />
+          <div class="card-body">
+            <h5 class="card-title">Spyder helmet</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="images/helmet3.png" class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 class="card-title">Drifter helmet</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="images/ls2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Ls2 helmet</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="images/kyt.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Kyt</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="images/royal.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">royal helmet</h5>
+
+            <a href="#" class="btn btn-primary">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--bootstrap card-->
+    <div class="left" style="padding: 30px">
+      <div class="box">
+        <div class="blur-background">
+          <h3 class="same">WHO WE ARE</h3>
+          <h1 class="same">We Advocate for Road Safety</h1>
+          <p class="container" style="margin-right: 600px">
+            We don’t just sell Helmets; we do it by advocating ROAD SAFETY. Our
+            team, comprised of motorcycle enthusiasts make sure that they cater
+            to our customers with our company’s values of Thinking ahead,
+            Building Solidarity, and Ensuring Road Safety in mind. And those
+            values are reflected in helping you choose the right gear that
+            protects you throughout all your rides and saves your life in an
+            accident.
+          </p>
+        </div>
+      </div>
+      <div class="story">
+        <h3>RIDERS STORIES</h3>
+        <h1>Beginning of Bike Life</h1>
+        <p>We would love to share your motorcycling stories.</p>
+        <p>
+          remember the day very clearly. I had finished my 2nd last exam and had
+          just one remaining the next day. It was in the morning around 7:30, I
+          went to the parking and started my bike. There are a couple of turns
+          on the way to St. Xaviers and to my misfortune the road was wet due to
+          a water tanker’s carelessness while distributing it to one of the
+          houses. I was going downhill and just as I was about to pass the
+          second turn my rear tyre slipped and then fell down upon me. My leg
+          was trapped by my ride but the sadder thing was the handle fell upon
+          my ring finger which caused a small piece of flesh to rip off. Luckily
+          my friend was coming in his ride behind me and he helped me get up and
+          took me to a pharmacy for the first aid.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container" style="width: 50%">
+      <div class="heheh">
+        <h3>OUR BRANDS</h3>
+        <h1>wE Will not you down</h1>
+        <p>
+          Being one of the largest automotive multi-brand aftersales retail
+          showroom, we offer wide collection of genuine and trusted brands to
+          our valuable customers to meet their needs and desires as per their
+          riding style.
+        </p>
+      </div>
+    </div>
+    <div class="brand">
+      <div class="card" style="width: 18rem">
+        <img src="images/brand1.png" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="images/brand2.png" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="images/brand3.png" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="images/brand4.png" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="images/brand5.png" class="card-img-top" alt="..." />
+        <div class="card-body"></div>
+      </div>
+    </div>
+    <!-- yo pani card use gareko barnd o langi-->
+    <div class="container" style="width: 50%">
+      <div>
+        <h5>NEWSLETTER SUBSCRIPTION</h5>
+        <h1>Subscribe to our newsletter and stay updated.</h1>
+        <p>
+          Sign up for our monthly updates and be the first to know about our
+          special discounts and offers.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="SUBSCRIBE">
+      <div class="mb-3" style="width: 40%">
+        <label for="exampleFormControlInput1" class="form-label"
+          ><b>Email address</b></label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <button type="button" class="btn2" style="height: 40%">
+        <b>SUBSCRIBE</b>
+      </button>
+    </div>
+    <br />
+    <br />
+
+    <footer>
+      <div class="footercontainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facbook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a
+          ><a href=""><i class="fa-brands fa-twitter"></i></a
+          ><a href=""><i class="fa-brands fa-google-plus"></i></a
+          ><a href=""><i class="fa-brands fa-youtube"></i></a>
+          <!--A tag is definr a hyperlink,which is used to link from one page to another.-->
+          <!-- i tage is The class attribute assigns one or more CSS class names to the <i> tag -->
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">news</a></li>
+            <li><a href="">contact us</a></li>
+            <li><a href="">our team</a></li>
+          </ul>
+          <!-- ul tage is defines an unordered (bulleted) list-->
+          <!--li tag used to represent an item in a lis -->
+        </div>
+        <div class="footerbuttom">
+          <p>copyright &copy:2024 helmet Nepal</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+.helmet1 {
+  display: flex;
+  padding: 40px;
+  margin: 30px;
+}
+.card {
+  background: white; /* Semi-transparent background color */
+
+  margin: 20px;
+  border-radius: 10px;
+  height: 20rem;
+}
+.mid {
+  justify-content: center;
+}
+.container {
+}
+.but {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+
+  border-radius: 20px;
+}
+.avilable-helmet {
+}
+.col {
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+}
+.col {
+  width: 50%;
+}
+.story {
+  padding: 40px;
+}
+.brand {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+}
+.mb-3 {
+  padding: 40px;
+}
+.SUBSCRIBE {
+  display: flex;
+  justify-content: center;
+}
+.btn2 {
+  margin-top: 75px;
+  background-color: rgb(214, 12, 12);
+  color: #ffffff;
+  border-radius: 5px;
+  width: 150px;
+  height: 80px;
+}
+. {
+  display: flex;
+}
+.footerNav {
+  margin: 30px;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul li {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5;
+}
+.footerbuttom {
+  margin-left: 600px;
+  color: #d6d6d6;
+}
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  color: #d6d6d6;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: aliceblue;
+  margin: 10px;
+  border-radius: 50%;
+}
+footer {
+  background-color: #111;
+}

@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!--brand logo(favicon) with your tittle-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
 
     <link
       rel="stylesheet"
@@ -23,43 +23,161 @@
     />
     <!-- yo chai arko web site bata pre define css use garana ko lagi import
     gareko link like bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .helmet1 {
+        background: url("images/card.webp");
+        padding: 20px;
+      }
+
+      .card {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .btn-primary {
+        margin: auto;
+      }
+
+      .collapse-content {
+        margin-top: 20px;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 576px) {
+        .helmet {
+          width: 100%;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+        .maincontainer {
+          width: 100%;
+        }
+        .theback .thecard {
+          width: 100%;
+        }
+        .blur-background {
+          width: 100%;
+        }
+        .row {
+          width: 100%;
+        }
+        .card-body {
+          padding: 15px;
+        }
+
+        .card-title {
+          font-size: 1.2rem;
+        }
+
+        .btn-primary {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+      @media (max-width: 576px) {
+        /* Adjust card padding and font sizes */
+        .card-body {
+          padding: 15px;
+        }
+
+        .card-title {
+          font-size: 1.2rem;
+        }
+
+        .btn-primary {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+        }
+
+        /* Navbar adjustments */
+        .navbar-brand {
+          font-size: 1.5rem;
+        }
+
+        .navbar-toggler {
+          font-size: 1.2rem;
+        }
+
+        .offcanvas-body {
+          padding: 20px;
+        }
+
+        .offcanvas-title {
+          font-size: 1.5rem;
+        }
+
+        .nav-link {
+          font-size: 1rem;
+        }
+
+        .btn-outline-dark,
+        .btn-primary {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+
+        /* Adjust carousel image height */
+
+        /* About section adjustments */
+        .blur-background {
+          padding: 10px;
+        }
+
+        .blur-background h1 {
+          font-size: 1.5rem;
+        }
+
+        .blur-background p {
+          font-size: 1rem;
+        }
+
+        /* Card layout adjustments */
+        .row-cols-md-2 > .col {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+
+        .card {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
 
     <style>
-      .box {
-        width: 500px;
-        height: 500px;
-        padding: 30px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        font-style: italic;
-
-        background-image: url(images/helmet.jpg);
-        <!-- this for background image for particular div-->
-
-        background-repeat: no-repeat;
-        border-radius: 40px;
-        justify-content: center;
-      }
       .blur-background {
-        background: rgba(
-          255,
-          255,
-          255,
-          0.5
-        ); /* Semi-transparent background color */
+        background-color: rgb(21, 18, 18);
+
         backdrop-filter: blur(10px); /* Blur effect */
         -webkit-backdrop-filter: blur(10px); /* For Safari */
         padding: 20px;
-        margin: 20px;
+        margin: 0;
         border-radius: 40px;
       }
       .left {
+        width: auto;
         display: flex;
         font-weight: bold;
         color: white;
-        font-style: italic;
 
-        background-image: url(images/Motorbiking-1024x576.jpg);
+        background-image: url(images/);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
 
@@ -67,192 +185,452 @@
   </head>
 
   <body>
-    <div>
-      <nav class="navbar" style="background-color: #06151f">
-        <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Helmets Nepal</a>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      style="background-color: rgb(131, 107, 0)"
+    >
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#" style="color: rgb(172, 46, 46)"
+          >Helmets nepal</a
+        >
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+          style="background-color: #f8f9fa"
+        >
+          <span class="navbar-toggler-icon" style="color: #0c0c0c"></span>
+        </button>
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-red-800 border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Helmets nepal
+            </h5>
             <button
-              class="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              class="btn-close shodow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4">
+            <ul
+              class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Avilable helmet
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="color: #feffff"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#About" style="color: #feffff"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#service" style="color: #feffff"
+                  >Service</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Blog" style="color: #feffff">Blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Shop" style="color: #feffff">Shop</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#Contact" style="color: #feffff"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <button class="btn btn-outline-dark" href="#login">Login</button>
+              <button
+                class="btn btn-primary"
+                href="#signup"
+                style="padding: 9px"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
-        </nav>
-      </nav>
-    </div>
-    <!--import from bootstrap navbar and add css-->
-    <div class="blur-background">
-      <div class="container" style="color: white">
-        <h1 style="color: #06151f">About</h1>
+        </div>
       </div>
-      <div class="para">
-        <p class="container">
-          Helmets Nepal is the result of a technological revolution and growing
-          e-commerce industry, that encouraged us to create “a one-stop digital
-          platform”, for bike lovers. We sell fashion with protection ensuring
-          quality and with the promise of reliability. But above all, one thing
-          we prioritize in selling is “Road Safety”. Our Story A story of many
-          firsts and every one of them was a blessing. Helmets Nepal began
-          operation in Kathmandu in 2016 as the first complete online one-click
-          online platform in Nepal with a store in Anamnagar. The same year, we
-          became the first motorcycle safety gear and accessories retail store
-          in the industry to introduce the concept of showrooms in Nepal by
-          opening our first one in Maitighar. Another showroom followed in Teku,
-          next to our corporate office in 2019. In early 2021, we opened our
-          third showroom in Nagpokhari. Now Helmets Nepal is the go-to platform
-          and place for safety gears ranging from varieties of helmets, safety
-          apparel lubricants and, riding techs.
-        </p>
+    </nav>
+    <!--import from bootstrap navbar and add css-->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style=""
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ver2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ver3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <br />
+    <div class="flex" style="display: flex">
+      <div class="blur-background">
+        <div class="container" style="width: 30rem">
+          <h1 style="color: #feffff">About</h1>
+        </div>
+        <div class="container">
+          <p class="para" style="color: white">
+            Helmets Nepal is the result of a technological revolution and
+            growing e-commerce industry, that encouraged us to create “a
+            one-stop digital platform”, for bike lovers. We sell fashion with
+            protection ensuring quality and with the promise of reliability. But
+            above all, one thing we prioritize in selling is “Road Safety”. Our
+            Story A story of many firsts and every one of them was a blessing.
+            Helmets Nepal began operation in Kathmandu in 2016 as the first
+            complete online one-click online platform in Nepal with a store in
+            Anamnagar. The same year, we became the first motorcycle safety gear
+            and accessories retail store in the industry to introduce the
+            concept of showrooms in Nepal by opening our first one in Maitighar.
+            Another showroom followed in Teku, next to our corporate office in
+            2019. In early 2021, we opened our third showroom in Nagpokhari. Now
+            Helmets Nepal is the go-to platform and place for safety gears
+            ranging from varieties of helmets, safety apparel lubricants and,
+            riding techs.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="images/about1.png" alt="image" style="width: 16rem" />
       </div>
     </div>
     <br />
     <br />
 
-    <div class="container text-center">
+    <div
+      class="container text-center"
+      style="background-image: url(images/drop.jpg)"
+    >
       <div class="row align-items-start">
-        <div class="col" style="font-weight: lighter">
-          <h1 class="contain">FIRST ECOMMERCE PLATFORM</h1>
-          <div>
-            <p class="platform">
-              <b>One Stop Digital Platform for Motorcycle Enthusiasts </b>
-            </p>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div
+              class="card-body"
+              style="background-image: url(images/drop.jpg)"
+            >
+              <h1 class="container" style="color: aliceblue">
+                FIRST ECOMMERCE PLATFORM
+              </h1>
+              <p class="container" style="color: aliceblue">
+                <b>One Stop Digital Platform for Motorcycle Enthusiasts</b>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <h1 class="hero">FASHION WITH SAFETY</h1>
-          <p>
-            We sell fashion with protection ensuring quality and with the
-            promise of reliability. But above all, one thing we prioritize in
-            selling is “Road Safety”.
-          </p>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div
+              class="card-body"
+              style="background-image: url(images/drop.jpg)"
+            >
+              <h1 class="hero" style="color: aliceblue">FASHION WITH SAFETY</h1>
+              <p style="color: aliceblue">
+                We sell fashion with protection ensuring quality and with the
+                promise of reliability. But above all, one thing we prioritize
+                in selling is “Road Safety”.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h1>FIRST MOVER IN THE MARKET</h1>
-          <p>
-            Helmets Nepal has been capable to keep its name in this automotive
-            industry as the first one to introduce a showroom concept in Nepal.
-          </p>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div
+              class="card-body"
+              style="background-image: url(images/drop.jpg)"
+            >
+              <h1 style="color: aliceblue">FIRST MOVER IN THE MARKET</h1>
+              <p style="color: aliceblue">
+                Helmets Nepal has been capable to keep its name in this
+                automotive industry as the first one to introduce a showroom
+                concept in Nepal.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <!--bootstrap colunm-->
     <div class="avilable-helmet">
-      <div class="container">
-        <h1 class="mid"><button class="but">Avilable Helmets</button></h1>
+      <div class="container" style="color: #feffff">
+        <h1 class="mid" style="margin: 20px">Avilable Helmets</h1>
       </div>
+      <div class="helmet">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <div class="card" style="width: 15rem">
+                <img
+                  src="images/her.png"
+                  class="card-img-top"
+                  alt="image"
+                  style="padding: 20px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SOMAN HELMET</h5>
 
-      <div class="helmet1">
-        <div class="card" style="width: 18rem">
-          <img src="images/her.png" class="card-img-top" alt="image" />
-          <div class="card-body">
-            <h5 class="card-title">SOMAN</h5>
-
-            <a href="#" class="btn btn-primary">Purchase Now</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="theback"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Soman Helmets, an innovative player in the helmet industry,
+                    is known for its focus on safety, comfort, and advanced
+                    technology.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush" style="margin-top: 0">
+                  <li class="list-group-item">LUFFY GRAPHIC</li>
+                  <li class="list-group-item">size: Small,large</li>
+                  <li class="list-group-item">price:$2000</li>
+                </ul>
+                <div class="card-body">
+                  <button href="#" class="card-link">Buy NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="images/helmet2.png" class="card-img-top" alt="image" />
-          <div class="card-body">
-            <h5 class="card-title">Spyder helmet</h5>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <div class="card" style="width: 15rem">
+                <img
+                  src="images/helmet2.png"
+                  class="card-img-top"
+                  alt="image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Spyder helmet</h5>
 
-            <a href="#" class="btn btn-primary">Purchase Now</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <
+            <div
+              class="theback"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Spyder Helmets is a brand known for its quality and safety
+                    features, primarily catering to motorcycle riders.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush" style="margin-top: 0">
+                  <li class="list-group-item">Mat black</li>
+                  <li class="list-group-item">size: Small,large</li>
+                  <li class="list-group-item">price:$3000</li>
+                </ul>
+                <div class="card-body">
+                  <button href="#" class="card-link">Buy NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="images/helmet3.png" class="card-img-top" alt="img" />
-          <div class="card-body">
-            <h5 class="card-title">Drifter helmet</h5>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <div class="card" style="width: 15rem">
+                <img src="images/DTEII.png" class="card-img-top" alt="image" />
+                <div class="card-body">
+                  <h5 class="card-title">Drifter helmet</h5>
 
-            <a href="#" class="btn btn-primary">Purchase Now</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="theback"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Drifter Helmets is a brand that caters to motorcycle
+                    enthusiasts, focusing on delivering a blend of style,
+                    safety, and functionality
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush" style="margin-top: 0">
+                  <li class="list-group-item">colour black</li>
+                  <li class="list-group-item">size: Small,large</li>
+                  <li class="list-group-item">price:$100</li>
+                </ul>
+                <div class="card-body">
+                  <button href="#" class="card-link">Buy NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="images/ls2.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Ls2 helmet</h5>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <div class="card" style="width: 15rem">
+                <img src="images/ls2.png" class="card-img-top" alt="image" />
+                <div class="card-body">
+                  <h5 class="card-title">Ls2 helmet</h5>
 
-            <a href="#" class="btn btn-primary">Purchase Now</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="theback"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    LS2 Helmets is a globally recognized brand known for
+                    producing high-quality, affordable motorcycle helmets.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush" style="margin-top: 0">
+                  <li class="list-group-item">mst black</li>
+                  <li class="list-group-item">size: Small,large</li>
+                  <li class="list-group-item">price:$1000</li>
+                </ul>
+                <div class="card-body">
+                  <button href="#" class="card-link">Buy NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <div class="card" style="width: 15rem">
+                <img src="images/kyt.png" class="card-img-top" alt="image" />
+                <div class="card-body">
+                  <h5 class="card-title">Kyt</h5>
 
-        <div class="card" style="width: 18rem">
-          <img src="images/kyt.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Kyt</h5>
-
-            <a href="#" class="btn btn-primary">Purchase Now</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="images/royal.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">royal helmet</h5>
-
-            <a href="#" class="btn btn-primary">Purchase Now</a>
+                  <button type="button" class="btn btn-outline-primary">
+                    Details
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="theback"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="card" style="width: 15rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    KYT Helmets is a renowned brand known for producing
+                    high-performance motorcycle helmets. Originating from Italy,
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush" style="margin-top: 0">
+                  <li class="list-group-item">latest design</li>
+                  <li class="list-group-item">size: Small,large</li>
+                  <li class="list-group-item">price:$2000</li>
+                </ul>
+                <div class="card-body">
+                  <button href="#" class="card-link">Buy NOW</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--bootstrap card-->
+
     <div class="left" style="padding: 30px">
       <div class="box">
-        <div class="blur-background">
-          <h3 class="same">WHO WE ARE</h3>
-          <h1 class="same">We Advocate for Road Safety</h1>
-          <p class="container" style="margin-right: 600px">
+        <div class="blur-background" style="margin: 0">
+          <h3 class="same" style="color: rgb(255, 255, 255)">WHO WE ARE</h3>
+          <h1 class="same" style="color: rgb(255, 255, 255)">
+            We Advocate for Road Safety
+          </h1>
+          <p class="container" style="color: rgb(255, 255, 255)">
             We don’t just sell Helmets; we do it by advocating ROAD SAFETY. Our
             team, comprised of motorcycle enthusiasts make sure that they cater
             to our customers with our company’s values of Thinking ahead,
@@ -262,12 +640,15 @@
             accident.
           </p>
         </div>
+        <br />
       </div>
-      <div class="story">
-        <h3>RIDERS STORIES</h3>
-        <h1>Beginning of Bike Life</h1>
-        <p>We would love to share your motorcycling stories.</p>
-        <p>
+      <div class="container">
+        <h3 style="color: #feffff">RIDERS STORIES</h3>
+        <h1 style="color: #feffff">Beginning of Bike Life</h1>
+        <p style="color: #feffff">
+          We would love to share your motorcycling stories.
+        </p>
+        <p style="color: #feffff">
           remember the day very clearly. I had finished my 2nd last exam and had
           just one remaining the next day. It was in the morning around 7:30, I
           went to the parking and started my bike. There are a couple of turns
@@ -284,11 +665,11 @@
     </div>
     <br />
     <br />
-    <div class="container" style="width: 50%">
+    <div class="blur-background" style="width: 100% padding:20px;">
       <div class="heheh">
-        <h3>OUR BRANDS</h3>
-        <h1>wE Will not you down</h1>
-        <p>
+        <h3 style="color: #feffff">OUR BRANDS</h3>
+        <h1 style="color: #feffff">We Will not you down</h1>
+        <p style="color: #feffff">
           Being one of the largest automotive multi-brand aftersales retail
           showroom, we offer wide collection of genuine and trusted brands to
           our valuable customers to meet their needs and desires as per their
@@ -296,34 +677,36 @@
         </p>
       </div>
     </div>
-    <div class="brand">
-      <div class="card" style="width: 18rem">
+    <div class="helmet1 h-14rem">
+      <div class="card" style="width: 15rem">
         <img src="images/brand1.png" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 15rem">
         <img src="images/brand2.png" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 15rem">
         <img src="images/brand3.png" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 15rem">
         <img src="images/brand4.png" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
-      <div class="card" style="width: 18rem">
+      <div class="card" style="width: 15rem">
         <img src="images/brand5.png" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
     </div>
     <!-- yo pani card use gareko barnd o langi-->
-    <div class="container" style="width: 50%">
+    <div class="blur-background" style="width: 100%">
       <div>
-        <h5>NEWSLETTER SUBSCRIPTION</h5>
-        <h1>Subscribe to our newsletter and stay updated.</h1>
-        <p>
+        <h5 style="color: #feffff">NEWSLETTER SUBSCRIPTION</h5>
+        <h1 style="color: #feffff">
+          Subscribe to our newsletter and stay updated.
+        </h1>
+        <p style="color: #feffff">
           Sign up for our monthly updates and be the first to know about our
           special discounts and offers.
         </p>
@@ -331,9 +714,12 @@
     </div>
     <br />
     <br />
-    <div class="SUBSCRIBE">
-      <div class="mb-3" style="width: 40%">
-        <label for="exampleFormControlInput1" class="form-label"
+    <div class="blur-background" style="display: flex">
+      <div class="mb-3" style="width: 60%">
+        <label
+          for="exampleFormControlInput1"
+          class="form-label"
+          style="color: aliceblue"
           ><b>Email address</b></label
         >
         <input
@@ -349,11 +735,24 @@
     </div>
     <br />
     <br />
+    <div class="mb-3">
+      <label
+        for="exampleFormControlTextarea1"
+        class="form-label"
+        style="color: white"
+        >Your Comments</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <button class="btn btn-outline-dark" href="#login">SUBMIT</button>
+    </div>
 
     <footer>
       <div class="footercontainer">
         <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facbook"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a
           ><a href=""><i class="fa-brands fa-twitter"></i></a
           ><a href=""><i class="fa-brands fa-google-plus"></i></a
@@ -363,19 +762,30 @@
         </div>
         <div class="footerNav">
           <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">news</a></li>
-            <li><a href="">contact us</a></li>
-            <li><a href="">our team</a></li>
+            <li><a href="" style="color: aliceblue">home</a></li>
+            <li><a href="" style="color: aliceblue">news</a></li>
+            <li><a href="" style="color: aliceblue">contact us</a></li>
+            <li><a href="" style="color: aliceblue">our team</a></li>
           </ul>
           <!-- ul tage is defines an unordered (bulleted) list-->
           <!--li tag used to represent an item in a lis -->
         </div>
         <div class="footerbuttom">
-          <p>copyright &copy:2024 helmet Nepal</p>
+          <p class="center">copyright &copy:2024 helmet Nepal</p>
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("purchaseBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default link behavior
+          document.getElementById("newCard").style.display = "block";
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

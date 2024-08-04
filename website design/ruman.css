@@ -4,7 +4,9 @@ body {
   height: 100vh;
   overflow-x: hidden;
   background-image: url(images/black.png);
-  font-family: Georgia, "Times New Roman", Times, serif;
+
+  font-family: "Montserrat";
+  font-size: 22px;
 }
 html,
 body {
@@ -73,6 +75,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.card-body .card-link {
+  font-size: 20px;
+}
 
 .card img {
   width: 80%;
@@ -94,12 +99,10 @@ body {
 }
 
 .card-text {
-  margin: 10px 0;
-  font-size: 1em;
-  line-height: 1.5;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
+  font-size: 10px;
+}
+.list-group-item {
+  font-size: 15px;
 }
 
 .card-link,
@@ -560,6 +563,7 @@ footer {
   }
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
+  overflow-x: hidden;
   .mb-3:hover {
     background-color: #131214; /* Darker shade for hover effect */
     border-color: #cb53f3;

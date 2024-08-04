@@ -3,7 +3,10 @@ body {
   background-size: cover;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url(images/black.png);
+  background-image: url(images/third.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
   font-family: "Montserrat";
   font-size: 22px;
@@ -21,6 +24,12 @@ body {
   width: 100%;
 
   background: url(images/card.webp);
+}
+.flex {
+}
+.left {
+  display: flex;
+  justify-content: space-around;
 }
 
 .maincontainer {
@@ -445,7 +454,7 @@ footer {
 }
 
 .para {
-  color: rgb(0, 0, 0);
+  font-size: 20px;
   text-align: left;
   margin-right: 30px;
 }
@@ -472,6 +481,37 @@ footer {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.flex .blur-background {
+  width: 100%;
+}
+
+.blur-background {
+  margin: 10px 0;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.same {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .left {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .blur-background {
+    width: 40%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -564,6 +604,9 @@ footer {
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
   overflow-x: hidden;
+  body {
+    font-size: small;
+  }
   .mb-3:hover {
     background-color: #131214; /* Darker shade for hover effect */
     border-color: #cb53f3;
@@ -724,6 +767,10 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  .left {
+    width: 100%;
+    flex-wrap: wrap;
+  }
   .helmet1 {
     width: 100%;
     flex-wrap: wrap;

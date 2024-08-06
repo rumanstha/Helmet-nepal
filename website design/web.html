@@ -470,7 +470,7 @@
                 style="padding: 20px"
               />
               <div class="card-body">
-                <h5 class="card-title" style="font-family: "Montserrat";>SOMAN HELMET</h5>
+                <h5 class="card-title">SOMAN HELMET</h5>
 
                 <button type="button" class="btn btn-outline-primary">
                   Details
@@ -827,7 +827,6 @@
               <img src="images/kyt.png" class="card-img-top" alt="image" />
               <div class="card-body">
                 <h5 class="card-title">Kyt</h5>
-
                 <button type="button" class="btn btn-outline-primary">
                   Details
                 </button>
@@ -864,9 +863,8 @@
                     class="form-check-label"
                     for="flexRadioDefault1"
                     style="font-size: 15px"
+                    >Small</label
                   >
-                    Small
-                  </label>
                 </div>
                 <div class="form-check">
                   <input
@@ -881,14 +879,17 @@
                     class="form-check-label"
                     for="flexRadioDefault2"
                     style="font-size: 15px"
+                    >large</label
                   >
-                    large
-                  </label>
                 </div>
                 <li class="list-group-item">price:$2000</li>
               </ul>
               <div class="card-body">
-                <button type="button" class="btn btn-outline-primary">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="openPopup()"
+                >
                   Buy NOW
                 </button>
               </div>
@@ -897,6 +898,70 @@
         </div>
       </div>
     </div>
+    <div class="popup" id="popup">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" />
+            <input type="text" aria-label="Last name" class="form-control" />
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputnumber" class="form-label">Phone number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputname" class="form-label">your selected Helmet</label>
+          <select id="inputState" class="form-select">
+            <option selected>Soman helmet</option>
+            <option>KYT</option>
+            <option>DRIFT HELMET</option>
+            <option>Spyder Helmets</option>
+            <option>LS2 helmet</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Size</label>
+          <select id="inputState" class="form-select">
+            <option selected>small</option>
+            <option>large</option>
+            <option>extra large</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputdesign" class="form-label">your design</label>
+          <input type="text" class="form-control" id="inputdesign" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">Check me out</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" onclick="closePopup()">
+            Confirm
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <br />
 
     <div class="left">
       <div class="blur-background">
@@ -1062,7 +1127,7 @@
         </div>
       </div>
     </footer>
-    <script src="ruman.js"></script>
+    <script defer src="ruman.js"></script>
     <script>
       document
         .getElementById("purchaseBtn")

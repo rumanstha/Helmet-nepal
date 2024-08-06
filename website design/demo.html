@@ -1,122 +1,187 @@
-<div class="helmet">
-  <div class="maincontainer">
-    <div class="thecard">
-      <div class="thefront">
-        <div class="card">
-          <img
-            src="images/her.png"
-            class="card-img-top"
-            alt="image"
-            style="padding: 20px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">SOMAN HELMET</h5>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helmet Card with Pop-up Form</title>
+    <style>
+      /* styles.css */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            <button type="button" class="btn btn-outline-primary">
-              Details
-            </button>
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: for a semi-transparent background */
+      }
+
+      .popup {
+        display: none; /* Initially hidden */
+        width: 60%;
+        color: #f8f9fa;
+        background-color: rgba(26, 24, 24, 0.8);
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
+
+      .open-popup {
+        display: block; /* Show the pop-up when the class is added */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer" style="width: 15rem">
+      <div class="thecard" style="width: 15rem">
+        <div class="thefront" style="width: 15rem; height: fit-content">
+          <div class="card" style="width: 15rem">
+            <img src="images/kyt.png" class="card-img-top" alt="image" />
+            <div class="card-body">
+              <h5 class="card-title">Kyt</h5>
+              <button type="button" class="btn btn-outline-primary">
+                Details
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="theback"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <div class="card" style="width: 15rem">
-          <div class="card-body">
-            <p class="card-text">
-              Soman Helmets, an innovative player in the helmet industry, is
-              known for its focus on safety, comfort, and advanced technology.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush" style="margin-top: 0">
-            <li class="list-group-item">LUFFY GRAPHIC</li>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label
-                class="form-check-label"
-                for="flexRadioDefault1"
-                style="font-size: 15px"
-              >
-                Small
-              </label>
+        <div
+          class="theback"
+          style="
+            width: 15rem;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div class="card" style="width: 15rem">
+            <div class="card-body">
+              <p class="card-text">
+                KYT Helmets is a renowned brand known for producing
+                high-performance motorcycle helmets. Originating from Italy,
+              </p>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                size="15px"
-                checked
-              />
-              <label
-                class="form-check-label"
-                for="flexRadioDefault2"
-                style="font-size: 15px"
-              >
-                large
-              </label>
-            </div>
-            <li class="list-group-item">price:$2000</li>
-          </ul>
-          div class="card-body">
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Launch demo modal
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Modal title
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">Modal body content goes here.</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
-                  </button>
-                </div>
+            <ul class="list-group list-group-flush" style="margin-top: 0">
+              <li class="list-group-item">latest design</li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexRadioDefault1"
+                  style="font-size: 15px"
+                  >Small</label
+                >
               </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  size="15px"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="flexRadioDefault2"
+                  style="font-size: 15px"
+                  >large</label
+                >
+              </div>
+              <li class="list-group-item">price:$2000</li>
+            </ul>
+            <div class="card-body">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="openPopup()"
+              >
+                Buy NOW
+              </button>
             </div>
           </div>
-
-          <!-- Bootstrap JS and Popper.js -->
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="popup" id="popup">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" />
+            <input type="text" aria-label="Last name" class="form-control" />
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputnumber" class="form-label">Phone number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputname" class="form-label">your selected Helmet</label>
+          <select id="inputState" class="form-select">
+            <option selected>Soman helmet</option>
+            <option>KYT</option>
+            <option>DRIFT HELMET</option>
+            <option>Spyder Helmets</option>
+            <option>LS2 helmet</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Size</label>
+          <select id="inputState" class="form-select">
+            <option selected>small</option>
+            <option>large</option>
+            <option>extra large</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputdesign" class="form-label">your design</label>
+          <input type="text" class="form-control" id="inputdesign" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">Check me out</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" onclick="closePopup()">
+            Confirm
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="ruman.js"></script>
+  </body>
+</html>

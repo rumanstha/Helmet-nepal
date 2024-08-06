@@ -17,6 +17,25 @@ body {
   margin: 0;
 }
 
+.popup {
+  display: none; /* Initially hidden */
+  width: 60%;
+  color: #f8f9fa;
+  background-color: rgba(26, 24, 24, 0.8);
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.open-popup {
+  display: block; /* Show the pop-up when the class is added */
+  visibility: hidden;
+}
+
 .helmet {
   display: flex;
   flex-wrap: wrap;

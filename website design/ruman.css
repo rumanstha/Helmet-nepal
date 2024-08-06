@@ -21,19 +21,23 @@ body {
   display: none; /* Initially hidden */
   width: 60%;
   color: #f8f9fa;
-  background-color: rgba(26, 24, 24, 0.8);
+  background: url(images/form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   padding: 20px;
   position: fixed;
   top: 50%;
   left: 50%;
+  border-radius: 20px;
   transform: translate(-50%, -50%);
   z-index: 1000;
+  visibility: hidden;
 }
 
 .open-popup {
   display: block; /* Show the pop-up when the class is added */
-  visibility: hidden;
+  visibility: visible;
 }
 
 .helmet {
@@ -389,7 +393,7 @@ a {
   text-align: center;
   padding: 20px;
 }
-. .socialIcons {
+.socialIcons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -520,6 +524,31 @@ footer {
 .same {
   text-align: center;
 }
+@media (max-width: 600px) {
+  .popup {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove max-width constraint */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .popup-content {
+    max-height: 80vh; /* Reduce max height for smaller screens */
+  }
+
+  .col,
+  .col-md-6,
+  .col-md-4,
+  .col-md-3 {
+    width: 100%; /* Make form elements full-width */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
 
 @media (min-width: 768px) {
   .left {
@@ -553,7 +582,7 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
-0 @media (max-width: 768px) {
+@media (max-width: 768px) {
   .blur-background {
     padding: 10px;
   }
@@ -621,10 +650,6 @@ footer {
   }
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
-  overflow-x: hidden;
-  . .container {
-    text-justify: ;
-  }
   body {
     font-size: small;
   }

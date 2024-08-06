@@ -393,10 +393,11 @@
               </h1>
               <p
                 class="container"
-                style="color: alicebluefont-weight: lighter;
-              font-size: 15px;
-              color: #feffff;
-              "
+                style="
+                  color: alicebluefont-weight;
+                  font-size: 15px;
+                  color: #feffff;
+                "
               >
                 <b>One Stop Digital Platform for Motorcycle Enthusiasts</b>
               </p>
@@ -536,52 +537,13 @@
                 <!-- Button trigger modal -->
                 <button
                   type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  class="btn btn-outline-primary"
+                  onclick="openPopup()"
                 >
-                  Launch demo modal
+                  Buy NOW
                 </button>
 
                 <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          Modal title
-                        </h1>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        Modal body content goes here.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Save changes
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <!-- Bootstrap JS and Popper.js -->
               </div>
@@ -658,7 +620,11 @@
                 <li class="list-group-item">price:$3000</li>
               </ul>
               <div class="card-body">
-                <button type="button" class="btn btn-outline-primary">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="openPopup()"
+                >
                   Buy NOW
                 </button>
               </div>
@@ -736,7 +702,11 @@
                 <li class="list-group-item">price:$100</li>
               </ul>
               <div class="card-body">
-                <button type="button" class="btn btn-outline-primary">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="openPopup()"
+                >
                   Buy NOW
                 </button>
               </div>
@@ -812,7 +782,11 @@
                 <li class="list-group-item">price:$1000</li>
               </ul>
               <div class="card-body">
-                <button type="button" class="btn btn-outline-primary">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  onclick="openPopup()"
+                >
                   Buy NOW
                 </button>
               </div>
@@ -863,8 +837,7 @@
                     class="form-check-label"
                     for="flexRadioDefault1"
                     style="font-size: 15px"
-                    >Small</label
-                  >
+                  ></label>
                 </div>
                 <div class="form-check">
                   <input
@@ -899,23 +872,32 @@
       </div>
     </div>
     <div class="popup" id="popup">
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        onclick="closePopup()"
+      ></button>
       <form class="row g-3">
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-text">First and last name</span>
-            <input type="text" aria-label="First name" class="form-control" />
-            <input type="text" aria-label="Last name" class="form-control" />
+        <div class="row g-3">
+          <div class="col" style="padding: 0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col" style="padding: 0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+            />
           </div>
         </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
-        </div>
+
         <div class="col-12">
           <label for="inputnumber" class="form-label">Phone number</label>
           <input
@@ -954,7 +936,11 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary" onclick="closePopup()">
+          <button
+            type="submit"
+            class="btn btn-outline-primary"
+            onclick="closePopup()"
+          >
             Confirm
           </button>
         </div>

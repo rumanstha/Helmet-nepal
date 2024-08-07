@@ -872,79 +872,125 @@
       </div>
     </div>
     <div class="popup" id="popup">
-      <button
-        type="button"
-        class="btn-close"
-        aria-label="Close"
-        onclick="closePopup()"
-      ></button>
-      <form class="row g-3">
-        <div class="row g-3">
-          <div class="col" style="padding: 0">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="First name"
-              aria-label="First name"
-            />
-          </div>
-          <div class="col" style="padding: 0">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Last name"
-              aria-label="Last name"
-            />
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="inputnumber" class="form-label">Phone number</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Enter your phone number"
-          />
-        </div>
-        <div class="col-md-6">
-          <label for="inputname" class="form-label">your selected Helmet</label>
-          <select id="inputState" class="form-select">
-            <option selected>Soman helmet</option>
-            <option>KYT</option>
-            <option>DRIFT HELMET</option>
-            <option>Spyder Helmets</option>
-            <option>LS2 helmet</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Size</label>
-          <select id="inputState" class="form-select">
-            <option selected>small</option>
-            <option>large</option>
-            <option>extra large</option>
-          </select>
-        </div>
-        <div class="col-md-3">
-          <label for="inputdesign" class="form-label">your design</label>
-          <input type="text" class="form-control" id="inputdesign" />
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">Check me out</label>
-          </div>
-        </div>
-        <div class="col-12">
+      <div class="popup-content">
+        <form class="row g-3">
           <button
-            type="submit"
-            class="btn btn-outline-primary"
+            type="button"
+            class="btn-close"
+            aria-label="Close"
             onclick="closePopup()"
-          >
-            Confirm
-          </button>
-        </div>
-      </form>
+          ></button>
+          <div class="row g-3">
+            <div class="col" style="padding: 0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col" style="padding: 0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="inputnumber" class="form-label">Phone number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputHelmet" class="form-label"
+              >Your selected Helmet</label
+            >
+            <select
+              id="inputHelmet"
+              class="form-select"
+              onchange="populateSizes()"
+            >
+              <option value="Soman helmet">Soman helmet</option>
+              <option value="KYT">KYT</option>
+              <option value="DRIFT HELMET">DRIFT HELMET</option>
+              <option value="Spyder Helmets">Spyder Helmets</option>
+              <option value="LS2 helmet">LS2 helmet</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputSize" class="form-label">Size</label>
+            <div
+              class=""
+              style="
+                display: flex;
+                background-color: #0c0c0c00;
+                justify-content: space-around;
+              "
+            >
+              <input
+                type="checkbox"
+                class="btn-check-outline-primary"
+                id="btn-check-4"
+                autocomplete="off"
+              />
+              <label class="btn" for="btn-check-4">small</label>
+
+              <input
+                type="checkbox"
+                class="btn-check-outline-primary"
+                id="btn-check-5"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn" for="btn-check-5">large</label>
+              <input
+                type="checkbox"
+                class="btn-check-outline-primary"
+                id="btn-check-5"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn" for="btn-check-5">medium</label
+              ><input
+                type="checkbox"
+                class="btn-check-outline-primary"
+                id="btn-check-5"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn" for="btn-check-5">extra-large</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputdesign" class="form-label">Your design</label>
+            <input type="text" class="form-control" id="inputdesign" />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck"
+                >Check me out</label
+              >
+            </div>
+          </div>
+          <div class="col-12">
+            <button
+              type="submit"
+              class="btn btn-outline-primary"
+              onclick="closePopup()"
+            >
+              Finalize the payment
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <br />

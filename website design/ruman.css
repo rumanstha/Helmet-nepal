@@ -16,17 +16,21 @@ body {
   height: 100%;
   margin: 0;
 }
+.btn-check {
+}
 
 .popup {
   display: none; /* Initially hidden */
   width: 60%;
   color: #f8f9fa;
-  background: url(images/form4.jpg);
+  background: url(images/form5.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+
   align-items: center;
   padding: 20px;
   position: fixed;
+  size: auto-populate;
   top: 50%;
   left: 50%;
   border-radius: 20px;

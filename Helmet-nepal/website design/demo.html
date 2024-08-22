@@ -1,0 +1,110 @@
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <form class="row g-3">
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        onclick="closePopup()"
+      ></button>
+      <div class="row g-3">
+        <div class="col" style="padding: 0">
+          <input
+            type="text"
+            class="form-control"
+            id="first"
+            placeholder="First name"
+            aria-label="First name"
+          />
+          <span id=""
+        </div>
+        <div class="col" style="padding: 0">
+          <input
+            type="text"
+            class="form-control"
+            id="last"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="inputnumber" class="form-label">Phone number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputHelmet" class="form-label">Your selected Helmet</label>
+        <select id="inputHelmet" class="form-select" onchange="populateSizes()">
+          <option value="Soman helmet">Soman helmet</option>
+          <option value="KYT">KYT</option>
+          <option value="DRIFT HELMET">DRIFT HELMET</option>
+          <option value="Spyder Helmets">Spyder Helmets</option>
+          <option value="LS2 helmet">LS2 helmet</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="inputSize" class="form-label">Size</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="size"
+            id="sizeSmall"
+            value="small"
+          />
+          <label class="form-check-label" for="sizeSmall"> Small </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="size"
+            id="sizeLarge"
+            value="large"
+          />
+          <label class="form-check-label" for="sizeLarge"> Large </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="size"
+            id="sizeExtraLarge"
+            value="extra-large"
+          />
+          <label class="form-check-label" for="sizeExtraLarge">
+            Extra Large
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputdesign" class="form-label">Your design</label>
+        <input type="text" class="form-control" id="inputDesign" />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck">Check me out</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          onclick="openConfirmPopup()"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          confirm
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
